@@ -1,0 +1,10 @@
+@startuml
+
+interface LCD_Special_Character_Config <<Client_Server_Interface>>
+{
+  Gathers operations allowing to create special characters on LCD.
+  --
+  {abstract} + Create_Character( IN special_character_id:uint8, IN char_map uint8_array )
+}
+
+@enduml

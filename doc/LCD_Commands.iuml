@@ -1,0 +1,21 @@
+@startuml
+
+interface LCD_Commands <<Client_Server_Interface>>
+{
+  Gathers operations allowing to command a LCD.
+  --
+  {abstract} + Set_Cursor_Position( IN uint8 line_index:uint8, IN column_index:uint8 )
+  {abstract} + Print( IN text:characters_string )
+  {abstract} + Print_Special_Character( uint8_t special_character_idx )
+  {abstract} + Hide_Cursor()
+  {abstract} + Show_Cursor()
+  {abstract} + Blink_Cursor()
+  {abstract} + No_Blink_Cursor()
+  {abstract} + Hide_Text()
+  {abstract} + Show_Text()
+  {abstract} + Clear_Text()
+  {abstract} + Turn_Off_Backlight()
+  {abstract} + Turn_On_Backlight()
+} 
+
+@enduml
