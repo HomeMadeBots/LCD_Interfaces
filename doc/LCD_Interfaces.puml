@@ -1,8 +1,8 @@
 @startuml
 
-!includeurl https://gist.githubusercontent.com/Arnaud-Bonneuil/c317a7a30bed7d64e2b5b1f558ac00cf/raw/sober.puml
-
-!includeurl https://raw.githubusercontent.com/HomeMadeBots/LCD_Interfaces/main/doc/LCD_Special_Character_Config.puml
-!includeurl https://raw.githubusercontent.com/HomeMadeBots/LCD_Interfaces/main/doc/LCD_Commands.puml
+package LCD_Interfaces [
+  Gathers interfaces allowing to manage
+  a LCD.
+]
 
 @enduml
